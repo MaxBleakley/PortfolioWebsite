@@ -1,74 +1,125 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body, html {
-    height: 100%;
-    width: 100%;
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+*
+{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+h1
+{
     font-family: 'Varela', 'Exo', 'Ubuntu', 'Segoe UI', Helvetica, Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    z-index: -1;
-    position: absolute;
-  }
-  
-  .text-content {
-    position: relative;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: left;
+}
+
+
+
+h2
+{
+    font-family: 'Varela', 'Exo', 'Ubuntu', 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
     text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .text-content h1,
-  .text-content h2,
-  .text-content h3,
-  .text-content p {
-    margin-bottom: 1.5rem;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .text-content h1 {
-      font-size: 1.5rem;
-    }
-    .text-content h2,
-    .text-content h3 {
-      font-size: 1.2rem;
-    }
-    .text-content p {
-      font-size: 1rem;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .text-content h1 {
-      font-size: 1.2rem;
-    }
-    .text-content h2,
-    .text-content h3 {
-      font-size: 1rem;
-    }
-    .text-content p {
-      font-size: 0.9rem;
-    }
-  }
-  
+}
+
+
+p
+{
+    font-family: 'Varela', 'Exo', 'Ubuntu', 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: x-large;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+body {
+  margin-top: 13.5rem;
+  color: 999;
+  background-color: 333;
+  font: 400 16px/1.5 'Exo', 'Ubuntu', 'Segoe UI', Helvetica, Arial, sans-serif;
+  text-align: center;
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  background-size: 50px 50px;
+
+  -webkit-animation: bg-scrolling-reverse .92s infinite; /* Safari 4+ */
+  -moz-animation:    bg-scrolling-reverse .92s infinite; /* Fx 5+ */
+  -o-animation:      bg-scrolling-reverse .92s infinite; /* Opera 12+ */
+  animation:         bg-scrolling-reverse .92s infinite; /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function:    linear;
+  -o-animation-timing-function:      linear;
+  animation-timing-function:         linear;
+}
+
+
+.Navigation
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    padding-right: 1%; 
+}
+
+
+a, a:hover, a:active, a:visited{
+  color: black;
+  font-family: 'Varela', 'Exo', 'Ubuntu', 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: xx-large;;
+  font-weight: bolder;
+}
+
+
+h3{
+    color: Black;
+    font-family: 'Varela', 'Exo', 'Ubuntu', 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% { background-position: 50px 50px; }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% { background-position: 50px 50px; }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% { background-position: 50px 50px; }
+}
+@keyframes bg-scrolling-reverse {
+  100% { background-position: 50px 50px; }
+}
+
+@-webkit-keyframes bg-scrolling {
+  0% { background-position: 0 0; }
+}
+@-moz-keyframes bg-scrolling {
+  0% { background-position: 0 0; }
+}
+@-o-keyframes bg-scrolling {
+  0% { background-position: 0 0; }
+}
+@keyframes bg-scrolling {
+  0% { background-position: 0 0; }
+}
+
+
+img {
+    border-radius: 50%;
+    size: 100 100;
+}
