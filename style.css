@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Varela', 'Exo', 'Ubuntu', 'Segoe UI', Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+  }
+  
+  .text-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .text-content h1,
+  .text-content h2,
+  .text-content h3,
+  .text-content p {
+    margin-bottom: 1.5rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .text-content h1 {
+      font-size: 1.5rem;
+    }
+    .text-content h2,
+    .text-content h3 {
+      font-size: 1.2rem;
+    }
+    .text-content p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .text-content h1 {
+      font-size: 1.2rem;
+    }
+    .text-content h2,
+    .text-content h3 {
+      font-size: 1rem;
+    }
+    .text-content p {
+      font-size: 0.9rem;
+    }
+  }
+  
