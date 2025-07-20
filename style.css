@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin:0; padding:0; box-sizing:border-box; }
 
 body {
   font-family: 'Inter', sans-serif;
@@ -35,7 +34,7 @@ main {
   align-items: center;
   gap: 2rem;
   margin: 2rem 0;
-  max-width: 900px;   /* same as your main */
+  max-width: 900px;   
   margin: 2rem auto;  /* center the whole block */
 }
 
@@ -137,6 +136,79 @@ footer .social img {
 a {
     color: #000;
 }
+
+/* education list */
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.edu-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.edu-item img {
+  width: 80px;
+  height: auto;
+}
+
+.edu-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.edu-content p {
+  margin: 0;
+  line-height: 1.4;
+  color: #555;
+}
+
+.subtitle {
+  max-width: 900px;
+  margin: 0.5rem auto 2rem;
+  padding: 0 1rem;
+  color: #555;
+}
+
+.proj-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+.proj-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.proj-item img {
+  width: 80px;
+  height: auto;
+}
+
+.proj-content h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.proj-content p {
+  margin: 0;
+  line-height: 1.4;
+  color: #333;
+}
+
 /* RESPONSIVE BREAKPOINTS */
 @media (max-width: 768px) {
   /* stack header */
@@ -185,4 +257,15 @@ a {
   footer {
     padding: 0 0.5rem 2rem;
   }
+}
+/* typing effect */
+#typed {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .12em solid #000;
+  animation: blink-caret .75s step-end infinite;
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50%      { border-color: #000;      }
 }
