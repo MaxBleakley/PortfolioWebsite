@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Max Bleakley</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="typing.js" defer></script></head>
+  <script src="typing.js" defer></script>
+</head>
 <body>
   <header>
     <div class="logo">&lt;MaxBleakley/&gt;</div>
@@ -20,25 +21,22 @@
   </header>
   <hr class="separator">
 
-<main>
-<h1>
-  <span id="typed" data-text="Projects"></span>
-</h1>
-<br>
-<p class="subtitle">
+  <main>
+    <h1>
+      <span id="typed" data-text="Projects"></span>
+    </h1>
+    <br>
+    <p class="subtitle">
       Below are just a few of the projects and technologies I make use of in my free time!
     </p>
 
     <section class="proj-list">
+
       <div class="proj-item">
         <img src="images/proxmox.png" alt="Proxmox logo">
         <div class="proj-content">
           <h2>Proxmox</h2>
-          <p>
-            I currently run a powerful homelab which uses proxmox as it’s hypervisor. 
-            My proxmox is clustered in a 3 cluster node. It runs a total of 42 CPU cores, 150GB of ram and 7TB of storage. 
-            Within these nodes i have 4 LXC Containers, and 3 VM’s
-          </p>
+          <p>A 3-node clustered homelab hypervisor running 42 CPU cores, 150GB RAM, and 7TB of storage, hosting 4 LXC containers and 3 VMs.</p>
         </div>
       </div>
 
@@ -46,11 +44,7 @@
         <img src="images/docker.png" alt="Docker logo">
         <div class="proj-content">
           <h2>Docker</h2>
-          <p>
-            As mentioned above, my homelab makes use of LXC containers and Linux VM’s. All of which have Docker containers deployed within them. The most vital containers
-             I make use of include my Unifi controller, responsible for managing my Unifi AP and Switch. Pihole, which acts as a network wide adblocker,
-             uptime Kuma which is used for monitoring the uptime of different services and finally, paperless, which I use to manage my documents
-          </p>
+          <p>Used across the homelab to run key services including a Unifi network controller, Pi-hole ad blocker, Uptime Kuma for monitoring, and Paperless for document management.</p>
         </div>
       </div>
 
@@ -58,37 +52,62 @@
         <img src="images/linux.png" alt="Linux logo">
         <div class="proj-content">
           <h2>Linux</h2>
-          <p>
-Linux is an OS I have become proficient in recently due to my home lab running Linux based proxmox, Ubuntu server based VM’s and containers as well as switching my daily driver 
-laptop too Arch Linux among other distributions.          </p>
+          <p>Daily-used OS across the homelab running Proxmox and Ubuntu Server, as well as on a personal laptop running Arch Linux.</p>
         </div>
       </div>
+
       <div class="proj-item">
-        <img src="images/opnSense.jpg" alt="Ubiquiti logo">
+        <img src="images/OpnSense.png" alt="OPNsense logo">
         <div class="proj-content">
           <h2>OPNsense Router</h2>
-          <p>
-            Within my homelab environment, I have deployed an OPNSense router within my home network,
-            This is the current router I use, and it  provides valuable information and experience on the 
-            intricacies of deploying a router making use of open source software. 
-          </p>
+          <p>A self-hosted open-source router deployed within the home network, providing hands-on experience with routing and network configuration.</p>
         </div>
       </div>
+
       <div class="proj-item">
         <img src="images/ubiquiti.png" alt="Ubiquiti logo">
         <div class="proj-content">
           <h2>Ubiquiti</h2>
-          <p>
-            Ubiquiti is a company I have become increasingly familiar with. After moving house I began finding dead zones for wi-fi. With this came the realization 
-            that my ISP provided hub was insufficient. After careful consideration 
-            I purchased 2 Ubiquiti Access Point’s as well as a 16 pro max POE network switch. I am looking to upgrade to a Dream Machine Pro in the near future.
-          </p>
+          <p>A home Wi-Fi upgrade using 2 Ubiquiti Access Points and a 16-port Pro Max PoE switch to replace an inadequate ISP router, with plans to add a Dream Machine Pro.</p>
         </div>
       </div>
+
+      <div class="proj-item">
+        <img src="images/TPot.png" alt="T-Pot logo">
+        <div class="proj-content">
+          <h2>T-Pot Honeypot</h2>
+          <p>Deployed and analysed a T-Pot honeypot to monitor real-world attack traffic. Gained insight into common attack vectors, threat actors, and malicious behaviour patterns through live data capture and visualisation via the built-in Kibana dashboard.</p>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <img src="images/RaspPi.png" alt="Raspberry Pi logo">
+        <div class="proj-content">
+          <h2>Facial Recognition (Raspberry Pi)</h2>
+          <p>Developed and deployed a facial recognition system on a Raspberry Pi, leveraging computer vision libraries to identify and verify faces in real time — exploring practical applications in security and access control.</p>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <img src="images/Autopsy.png" alt="Autopsy logo">
+        <div class="proj-content">
+          <h2>Digital Forensics (Autopsy)</h2>
+          <p>Conducted a digital forensic investigation using Autopsy, analysing disk images to recover deleted files, examine metadata, and document findings — simulating a structured forensic workflow as used in real incident response.</p>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <img src="images/OWRT.png" alt="OpenWRT logo">
+        <div class="proj-content">
+          <h2>OpenWRT</h2>
+          <p>Deployed OpenWRT on compatible hardware to replace stock router firmware, gaining experience with custom routing, firewall rules, and advanced network configuration on an open-source platform.</p>
+        </div>
+      </div>
+
     </section>
   </main>
 
-    <hr class="separator">
+  <hr class="separator">
 
   <footer>
     <div class="footer-content">
@@ -98,11 +117,9 @@ laptop too Arch Linux among other distributions.          </p>
         <p>&lt;maxbleakley.com/&gt;</p>
       </div>
       <div class="social">
-        <a href="https://www.facebook.com/people/Max-Bleakley/pfbid0WKnLWtUCng5oUACr4Bx2cxPpirjSCgfdG37yRUod25LrLQndFvjGELMFBFjAwoEwl/"><img src="./images/fb.png" alt=""><span>Max Bleakley</span></a>
-        <a href="https://www.linkedin.com/in/maxbleakley/"><img src="./images/Li.png" alt=""><span>Max Bleakley</span></a>
+        <a href="https://www.facebook.com/people/Max-Bleakley/pfbid0WKnLWtUCng5oUACr4Bx2cxPpirjSCgfdG37yRUod25LrLQndFvjGELMFBFjAwoEwl/"><img src="./images/fb.png" alt=""><span>Max Bleakley</span></a>
+        <a href="https://www.linkedin.com/in/maxbleakley/"><img src="./images/Li.png" alt=""><span>Max Bleakley</span></a>
         <a href="https://www.instagram.com/max_bleakley_/"><img src="./images/ig.png" alt="instagram"><span>Max_bleakley_</span></a>
-        <!--<a href="https://github.com/MaxBleakley"><img src="./images/Gh.png" alt="Github"><span>MaxBleakley</span></a>-->
-
       </div>
     </div>
   </footer>
